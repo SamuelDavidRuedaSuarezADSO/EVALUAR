@@ -4,8 +4,34 @@
   box-sizing: border-box;
 }
 
+:root{
+  --bgd-yellow-color: #fbdd01;
+  --bgd-green-decoration: #e3e1a6;
+}
+
+.figure{
+  position: absolute;
+  z-index: -90;
+  right: 0;
+  width: 430px;
+  height: 100%;
+  clip-path: polygon(43% 0, 100% 0, 100% 100%, 30% 100%);
+  background-color: var(--bgd-green-decoration);
+}
+.figure2{
+  position: absolute;
+  z-index: -90;
+  right: 0;
+  width: 600px;
+  height: 100%;
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 0% 100%);
+  background-color: var(--bgd-green-decoration);
+}
 .header{
+  position: relative;
+  z-index: -100;
   width: 100%;
+  background-color: var(--bgd-yellow-color);
 }
 .header__top{
   width: 100%;
@@ -58,7 +84,6 @@
   width: 60px;
   height: 60px;
 }
-
 .header__botom{
   display: flex;
   justify-content: flex-end;
@@ -70,4 +95,91 @@
 a{
   color: black;
   text-decoration: none;
+}
+
+
+hr{
+  width: 350px;
+  margin-bottom: 10px;
+
+}
+.problem{
+  position: relative;
+  z-index: -90;
+  background-color: var(--bgd-yellow-color);
+  width: 100%;
+  height: 530px;
+  display: flex;
+}
+.problem__quest{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.problem__quest--brid{
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+}
+.problem__quest--img{
+  width: 80px;
+  height: 120px;
+  position: absolute;
+  top: 130px;
+  left: 200px;
+}
+.problem__quest--title{
+  font-family: "Quintessential", serif;
+  font-size: 40px;
+  margin-bottom: 20px;
+
+}
+.problem__quest--answer{
+  font-family: "Goblin One", serif;
+  font-size: 55px;
+  margin-bottom: 30px;
+}
+.problem__quest--subtitle{
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+.problem__quest--prim{
+  display: grid;
+  grid-template-columns: 200px auto;
+  justify-content: center;
+}
+.problem__quest--happy{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+}
+.problem__quest--math{
+  width: 180px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+}
+.problem__quest--button{
+  width: 200px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  background: none;
+}
+.problem__img{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.problem__img--pasta{
+  width: 500px;
+  height: 500px;
 }
